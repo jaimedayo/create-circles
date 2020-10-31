@@ -90,5 +90,7 @@ function mouseClicked() {
 }
 
 function keyTiped() {
-
+    if(keyCode===78){
+        
+    }
 }

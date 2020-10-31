@@ -1,4 +1,5 @@
 let c;
+let con;
 let pag;
 function setup() {
     c = 0;
@@ -63,6 +64,8 @@ function mouseClicked() {
     //zona sensible cambio de pantalla 
     if (mouseX >= 100 && mouseX <= 500 && mouseY >= 400 && mouseY <= 500 && pag == 0) {
         pag = 1;
+     
+        con.next(c);
     }
 
 

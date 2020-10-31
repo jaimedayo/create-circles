@@ -1,10 +1,11 @@
+
 let c;
 let con;
 let pag;
 function setup() {
     c = 0;
-    pag = 0
-
+    pag = 0;
+con = new Controller;
     createCanvas(600, 600);
 
 }
@@ -73,27 +74,27 @@ function mouseClicked() {
 
 //add
     if (mouseX >= 40 && mouseX <= 160 && mouseY >= 450 && mouseY <= 550 && pag == 1) {
-
+con.add();
     }
 
 //remove
     if (mouseX >= 165 && mouseX <= 285 && mouseY >= 450 && mouseY <= 550 && pag == 1) {
-
+con.remove();
     }
 
 //expand
     if (mouseX >= 290 && mouseX <= 410 && mouseY >= 450 && mouseY <= 550 && pag == 1) {
-
+con.expand();
     }
 
 //circles
     if (mouseX >= 415 && mouseX <= 575 && mouseY >= 450 && mouseY <= 550 && pag == 1) {
-
+con.circle();
     }
 }
 
 function keyTiped() {
     if(keyCode===78){
-        
+        con.sorce();
     }
 }

@@ -1,15 +1,19 @@
-import { Logic } from "model/Logic";
 
-let l;
+
+
+
+
+let l ;
 
 class Controller{
 
-    l = new Logic;
-
-
+  l = new Logic;
+   
 next(c){
 
-    l.makeArray(c);
+
+l.makeArray(c);
+    
 }
 
 circle(){

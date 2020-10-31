@@ -1,6 +1,6 @@
 let listS;
 let listc;
-let c;
+
 let s;
 
 class Logic{
@@ -15,8 +15,6 @@ makeArray(c){
         s=new Square;(40*i,random(110, 150),15,random(0, 11));
         lists.push(s);
     }
-   
-
 }
 grow(){
 listS.forEach(s => {
